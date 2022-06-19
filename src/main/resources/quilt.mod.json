@@ -1,0 +1,38 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "com.mtstream",
+		"id": "shelved",
+		"version": "${version}",
+		"metadata": {
+			"name": "Shelved",
+			"description": "Hmm...",
+			"contributors": {
+				"mtstream": "Owner"
+			},
+			"contact": {
+				"homepage": "https://example.com/"
+			},
+			"icon": "assets/shelved/icon.png"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "com.mtstream.shelved.Shelved",
+			"client": "com.mtstream.shelved.ShelvedClient"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.17.0-"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=2.0.0-"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.19"
+			}
+		]
+	}
+}

@@ -29,13 +29,13 @@ public class AppleFeature extends Feature<NoneFeatureConfiguration>{
 			return false;
 		}else {
 			if(con.random().nextInt(50) == 1) {
-				lev.setBlock(pos, BlockInit.PLACED_GOLDEN_APPLE.get().defaultBlockState().setValue(PlacedAppleBlock.FACING, Direction.UP), 2);
+				lev.setBlock(pos, BlockInit.PLACED_GOLDEN_APPLE.defaultBlockState().setValue(PlacedAppleBlock.FACING, Direction.UP), 2);
 			}else {
-				lev.setBlock(pos, BlockInit.PLACED_APPLE.get().defaultBlockState().setValue(PlacedAppleBlock.FACING, Direction.UP), 2);
+				lev.setBlock(pos, BlockInit.PLACED_APPLE.defaultBlockState().setValue(PlacedAppleBlock.FACING, Direction.UP), 2);
 			}
 			return true;
 		}
-		
+
 	}
 
 }
